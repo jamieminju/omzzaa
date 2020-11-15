@@ -9,7 +9,7 @@
 class Particle {
   constructor(position) {
     this.acceleration = createVector(0, 0.05);
-    this.velocity = createVector(random(-1, 1), random(-1, 0));
+    this.velocity = createVector(random(-5, 1), random(-5, 0));
     this.position = position.copy();
     this.lifespan = 255.0;
   }
@@ -28,10 +28,9 @@ class Particle {
 
   // Method to display
   display() {
-    stroke(255, this.lifespan);
-    strokeWeight(2);
-    fill(127, this.lifespan);
-    ellipse(this.position.x, this.position.y, 12, 12);
+    stroke();
+    fill(200,2000, this.lifespan);
+    ellipse(this.position.x, this.position.y, 40, 40);
   }
 
   // Is the particle still useful?
