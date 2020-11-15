@@ -15,10 +15,11 @@ function setup() {
   text.position(10, 365);
 
   createCanvas(640, 360);
+  background(0,0,150);
 }
 
 function draw() {
-  background(51);
+  background(200,200,0);
   for (let i = 0; i < systems.length; i++) {
     systems[i].addParticle();
     systems[i].run();
