@@ -15,7 +15,7 @@ function setup() {
   text.position(10, 365);
 
   createCanvas(640, 360);
-  background(0,0,150);
+  
 }
 
 function draw() {
