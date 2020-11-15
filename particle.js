@@ -29,7 +29,7 @@ class Particle {
   // Method to display
   display() {
     stroke();
-    fill(200,200, this.lifespan);
+    fill(0,this.lifespan);
     ellipse(this.position.x, this.position.y, 40, 40);
   }
 
