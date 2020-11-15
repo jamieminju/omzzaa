@@ -19,7 +19,7 @@ function setup() {
 }
 
 function draw() {
-  background(150,150,0);
+  background(250,50,0);
   for (let i = 0; i < systems.length; i++) {
     systems[i].addParticle();
     systems[i].run();
